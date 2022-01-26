@@ -1,7 +1,5 @@
-// import SVG from "svg.js" //v3.0
-import {Container, SVG, ViewBox} from "@svgdotjs/svg.js";
+import {Container, SVG} from "@svgdotjs/svg.js";
 const { map, random, spline } = require("../lib/generative-utils");
-// const SVG = require("../lib/svgjs");
 const tinycolor = require("../lib/tinycolor");
 
 const config = {
