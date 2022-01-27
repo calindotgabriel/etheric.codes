@@ -9,10 +9,16 @@ import {
   Route
 } from "react-router-dom";
 import CurriculumVitaeComponent from './view/CVComponent';
+import {Helmet} from "react-helmet";
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Calin Gabriel - Etheric Code</title>
+      <link rel="canonical" href="http://mysite.com/example" />
+    </Helmet>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}/>
