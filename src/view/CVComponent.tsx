@@ -5,7 +5,7 @@ import { ProjectsView } from "./ProjectsView";
 import { ExperienceView } from "./ExperienceView";
 
 const CurriculumVitaeComponent = () => (
-  <Main className="p-6">
+  <Main className="pl-10 pt-8">
     <div className="text-3xl tracking-widest">
       {cv.name}
     </div>

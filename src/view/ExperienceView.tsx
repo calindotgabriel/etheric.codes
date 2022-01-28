@@ -9,7 +9,6 @@ type ExperienceViewProps = {
 
 export const ExperienceView: React.FC<ExperienceViewProps> = (props) => {
   const { experience } = props;  
-  console.warn({experience});
   return (
     <section className="">
       <H3>Experience</H3>

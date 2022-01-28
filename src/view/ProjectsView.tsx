@@ -8,7 +8,6 @@ type ProjectsViewProps = {
 
 export const ProjectsView: React.FC<ProjectsViewProps> = (props) => {
   const { projects } = props;  
-  console.warn({projects});
   return (
     <section className=""> 
         <H3>Projects</H3>

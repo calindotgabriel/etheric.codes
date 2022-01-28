@@ -37,7 +37,7 @@ export const BackgroundWavesView: React.FC<BackgroundWavesViewProps> = ({ childr
           ></svg>
         </div>
         <div className="relative" ref={contentRef}>
-          <div className={`ml-6 mr-6 ${className}`}>{children}</div>
+          <div className={`lg:ml-6 lg:mr-6 ${className}`}>{children}</div>
         </div>
       </div>
     </>
