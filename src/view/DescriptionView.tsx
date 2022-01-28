@@ -5,7 +5,6 @@ type DescriptionViewProps = {
 
 export const DescriptionView: React.FC<DescriptionViewProps> = (props) => {
   const { description, index } = props;  
-  console.warn({description});
   return (
     <ul className="list-disc">
       {description.map((desc, j) =>

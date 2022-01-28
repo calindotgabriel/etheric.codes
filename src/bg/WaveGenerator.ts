@@ -28,9 +28,6 @@ export default class WaveGenerator {
   }
 
   public generate(svgCanvasClassName = ".canvas"): any {
-      console.warn({SVG});
-      
-    console.warn({svgCanvasClassName})
     const svg = SVG(svgCanvasClassName) as Container;
     const { width, height } = svg.viewbox();
 
