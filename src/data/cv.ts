@@ -27,7 +27,7 @@ export default {
         role: "Full Stack Developer",
         period: "Jul 2018 - Sep 2019",
         description: [
-          "Support one of the biggest american health e-commerce store",
+          "Support one of the biggest american health e-commerce stores",
           "Champion features that enable virtual wallets, distribution to other e-shops and tracks user actions",
           "Work in direct contact with the client and manage requirments",
           "React.js, Node.js, GraphQL, Reaction Commerce, Meteor.js, MongoDB, Less, HTML5, CSS, Git",
@@ -45,7 +45,7 @@ export default {
     },
     {
         office: "keSolutions, CJ, Romania",
-        role: "Web developer",
+        role: "Web developer",  
         period: "Dec 2015 - Aug 2016",
         description: [
           "Champion the development of an app for a UK cyberbullying startup which helps parents by scraping kid's social media channels, aggregating them, analyzing for bully-like behavior",
@@ -74,7 +74,7 @@ export default {
       ]
     },
     {
-      client: 'Nets',
+      // client: 'Nets',
       title: 'Frontend',
       period: 'Oct 2020 - Jun 2021',
       description: [
@@ -85,7 +85,7 @@ export default {
       ]
     },
     {
-      client: 'eLife',
+      // client: 'eLife',
       title: 'Fullstack',
       period: 'May 2020 - Oct 2020',
       description: [
@@ -95,11 +95,11 @@ export default {
       ]
     },
     {
-      client: 'Telekom',
+      // client: 'Telekom',
       title: 'Frontend',
       period: 'Nov 2019 - April 2020',
       description: [
-        "Develop for Telekom DE the product Flowground, a IFTTT pluggable cloud service which helps automate businesses",
+        "Develop for a IFTTT pluggable cloud service which helps automate businesses",
         "Extend and refactor the data validation module, build from scratch a 'drag and drop' UI interface",
         "Preact.JS, Express.JS, MongoDB",
       ]
