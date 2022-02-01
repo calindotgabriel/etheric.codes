@@ -70,12 +70,11 @@ export default class WaveGenerator {
         map(i, 0, numWaves, -height / 2, height / 3) + randomOffset;
       const endY = map(i, 0, numWaves, 0, 1000) + randomOffset;
 
-      // console.warn(i, {randomOffset}, {originY}, {endY});
+      const darkenFactor = 30;
+      let color = random(this.colors).darken(darkenFactor/2).clone();
 
-      let color = random(this.colors).darken(10).clone();
-
-      if (i > 3) {
-        color = color.darken(random(20, 40)).desaturate(random(10, 20));
+      if (i > 4) {
+        color = color.darken(darkenFactor).desaturate(random(15, 30));
       }
 
       const gradientOffset = map(i, 0, numWaves, 0.1, 1);

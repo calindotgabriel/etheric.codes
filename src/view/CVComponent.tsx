@@ -7,7 +7,7 @@ import { FaArrowLeft, FaArrowCircleLeft, FaLongArrowAltLeft } from 'react-icons/
 import { Link } from "react-router-dom";
 
 const CurriculumVitaeComponent = () => (
-  <Main className="pl-10 pt-8 pr-5 lg:text-lg">
+  <Main className="lg:pl-10 lg:pt-8 lg:pr-5 lg:text-lg pl-4 pt-3 pr-3">
     <Link to="/">
     <div className="fixed left-3 bottom-5 cursor-pointer text-xl">
       <FaArrowLeft/>
@@ -35,7 +35,7 @@ const CurriculumVitaeComponent = () => (
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-2 gap-8 mt-3">
+    <div className="grid grid-cols-2 gap-8 mt-2">
       <ExperienceView experience={cv.experience}/>
       <ProjectsView projects={cv.projects}/>
     </div>

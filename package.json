@@ -15,6 +15,7 @@
     "@types/react-helmet": "^6.1.5",
     "@types/svg.js": "^2.3.1",
     "autoprefixer": "^10.4.2",
+    "jspdf": "^2.5.1",
     "postcss": "^8.4.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

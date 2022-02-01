@@ -27,7 +27,7 @@ export const BackgroundWavesView: React.FC<BackgroundWavesViewProps> = ({ childr
   
   return (
     <>
-      <div className="relative w-screen h-screen font-sans text-white text-sm">
+      <div className="relative w-screen h-screen font-sans text-white text-sm overflow-x-hidden leading-tight">
         <div className="z-0 top-0 left-0 w-full h-full absolute">
           <svg
             className="canvas"
