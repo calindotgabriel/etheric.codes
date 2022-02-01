@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/etheynhq/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R /home/etheynhq/public_html/repo/build $DEPLOYPATH
