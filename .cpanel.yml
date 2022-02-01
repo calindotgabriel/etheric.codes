@@ -1,4 +1,3 @@
----
 deployment:
  tasks:
  - export DEPLOYPATH=/home/etheynhq/public_html/
