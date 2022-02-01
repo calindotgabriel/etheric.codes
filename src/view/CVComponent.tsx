@@ -3,9 +3,16 @@ import cv from "../data/cv";
 import React, { Fragment } from "react";
 import { ProjectsView } from "./ProjectsView";
 import { ExperienceView } from "./ExperienceView";
+import { FaArrowLeft, FaArrowCircleLeft, FaLongArrowAltLeft } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const CurriculumVitaeComponent = () => (
   <Main className="pl-10 pt-8 pr-5 lg:text-lg">
+    <Link to="/">
+    <div className="fixed left-3 bottom-5 cursor-pointer text-xl">
+      <FaArrowLeft/>
+    </div>
+    </Link>
     <div className="text-3xl tracking-widest">
       {cv.name}
     </div>
