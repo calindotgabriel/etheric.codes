@@ -21,13 +21,13 @@ export const BackgroundWavesView: React.FC<BackgroundWavesViewProps> = ({ childr
     const bgSvg = canvasRef?.current as any;
 
     if (contentDiv.clientHeight > bgSvg.clientHeight) {
-      bgSvg.style.height = contentDiv.clientHeight;
+      bgSvg.style.height = contentDiv.clientHeight + 50;
     }
   })
   
   return (
     <>
-      <div className="relative w-screen h-screen font-sans text-white text-sm overflow-x-hidden leading-tight">
+      <div id="bwv-container" className="relative w-screen h-screen font-sans text-white text-sm leading-normal md:leading-normal lg:leading-relaxed md:text-md lg:text-lg font-roboto">
         <div className="z-0 top-0 left-0 w-full h-full absolute">
           <svg
             className="canvas"
@@ -37,7 +37,7 @@ export const BackgroundWavesView: React.FC<BackgroundWavesViewProps> = ({ childr
           ></svg>
         </div>
         <div className="relative" ref={contentRef}>
-          <div className={`lg:ml-6 lg:mr-6 ${className}`}>{children}</div>
+          <div className={`md:ml-6 md:mr-6 ${className}`}>{children}</div>
         </div>
       </div>
     </>

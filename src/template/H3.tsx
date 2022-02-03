@@ -6,6 +6,6 @@ type H3Props = {
 
 export const H3: React.FC<H3Props> = (props) => {
   return (
-    <h3 className="uppercase text-xl font-bold">{props.children}</h3>
+    <h3 className="uppercase text-2xl font-bold tracking-wide">{props.children}</h3>
   )
 }

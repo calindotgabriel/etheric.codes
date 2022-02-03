@@ -5,34 +5,28 @@ import { ProjectsView } from "./ProjectsView";
 import { ExperienceView } from "./ExperienceView";
 import { FaArrowLeft, FaArrowCircleLeft, FaLongArrowAltLeft } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import { H3 } from "../template/H3";
+import { EducationView } from "./EducationView";
 
 const CurriculumVitaeComponent = () => (
-  <Main className="lg:pl-10 lg:pt-8 lg:pr-5 lg:text-lg pl-4 pt-3 pr-3">
+  <Main className="pl-5 pt-6 pr-4 md:p-6 md:pt-12 lg:pl-10 lg:pr-5 lg:text-lg">
     <Link to="/">
-    <div className="fixed left-3 bottom-5 cursor-pointer text-xl">
+    <div className="fixed left-3 bottom-5 cursor-pointer text-sm lg:text-md print:hidden">
       <FaArrowLeft/>
     </div>
     </Link>
-    <div className="text-3xl tracking-widest">
+    <div className="text-3xl lg:text-4xl tracking-widest font-light">
       {cv.name}
     </div>
-    <div className="grid grid-cols-2 gap-8 mt-2 break-words">
+    <div className="grid grid-cols-2 gap-8 break-words mt-4 md:pt-6 leading-normal">
       <div>
         <p>{cv.headline}</p>
         <p>{cv.phoneNr}</p>
         <p>{cv.email}</p>
         {/* <p>website: {cv.website}</p> */}
       </div>
-      <div className="">
-        <h3 className="uppercase text-xl font-bold">Education</h3>
-        <div>
-        {cv.education.map((ed, i) => 
-          <Fragment key={'ed'+i}>
-            <p>{ed.name}, {ed.period}</p>
-            <p>{ed.description}</p>
-          </Fragment>
-        )}
-        </div>
+      <div className="md:pt-2">
+        <EducationView education={cv.education}/>        
       </div>
     </div>
     <div className="grid grid-cols-2 gap-8 mt-2">
