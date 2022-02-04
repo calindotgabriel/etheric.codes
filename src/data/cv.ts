@@ -55,7 +55,7 @@ export default {
     {
         office: "DeverSoft, GL, Romania",
         role: "Web developer",
-        period: "Dec 2015 - Aug 2016",
+        period: "Oct 2013 - Mar 2015",
         description: [
           "Build an in-house productivity and sharing app, champion the development of a installer wizard for a food industry software product",
           "Android, Java, Python, JavaScript, jQuery, SQLite, MySQL, PostgreSQL, Git, SVN, HTML5, CSS, SCSS, Less, Bootstrap"
