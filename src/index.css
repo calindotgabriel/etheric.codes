@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-#bwv-container {
+#root-view {
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
-#bwv-container::-webkit-scrollbar { /* WebKit */
+#root-view::-webkit-scrollbar { /* WebKit */
     width: 0;
     height: 0;
 }
