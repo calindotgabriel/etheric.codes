@@ -57,12 +57,12 @@ export default class WaveGenerator {
     };
 
     const { numWaves } = config;
-    const base = tinycolor(`hsl(${random(0, 360)}, 65%, 55%)`);
-    this.colors = base.analogous(6);
+    const base = tinycolor(`hsl(${random(200, 360)}, 65%, 55%)`);
+    this.colors = base.analogous(10);
 
     svg
       .rect(width, height)
-      .fill(random(this.colors).clone().darken(40).toString());
+      .fill(random(this.colors).clone().toString());
 
     for (let i = 0; i < numWaves; i++) {
       const randomOffset = random(-50, 50);
@@ -70,11 +70,11 @@ export default class WaveGenerator {
         map(i, 0, numWaves, -height / 2, height / 3) + randomOffset;
       const endY = map(i, 0, numWaves, 0, 1000) + randomOffset;
 
-      const darkenFactor = 30;
-      let color = random(this.colors).darken(darkenFactor/2).clone();
+      const darkenFactor = 25;
+      let color = random(this.colors).darken(darkenFactor).clone();
 
       if (i > 4) {
-        color = color.darken(darkenFactor).desaturate(random(15, 30));
+        color = color.darken(darkenFactor).desaturate(random(10, 20));
       }
 
       const gradientOffset = map(i, 0, numWaves, 0.1, 1);

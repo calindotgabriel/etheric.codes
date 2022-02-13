@@ -2,7 +2,8 @@ export default {
   name: "Calin Gabriel Iulian",
   headline: "software developer",
   phoneNr: "+40749407066",
-  email: "calindotgabriel18@gmail.com",
+  personalEmail: "calindotgabriel18@gmail.com",
+  email: "contact@etheric.codes",
   website: "etheric.codes",
   education: [
     {
@@ -90,7 +91,7 @@ export default {
       period: 'May 2020 - Oct 2020',
       description: [
         "Join the XP team of an open access scientific journal for the biomedical and life sciences",
-        "Recursively render scientific article formats as view components which enable a visualisation of a scientific article",
+        "Recursively render scientific article formats as view components",
         "Typescript, Koa.JS, MongoDB, MySQL, AWS, Docker"
       ]
     },

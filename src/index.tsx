@@ -3,18 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import CurriculumVitaeComponent from "./view/CVComponent";
 import { Helmet } from "react-helmet";
-import ReactDOMServer from "react-dom/server";
-import jsPDF from "jspdf";
-
-const downloadPdf = () => {
-  console.warn("downloadPdf()");
-  const doc: any = new jsPDF();
-  doc.fromHTML(ReactDOMServer.renderToStaticMarkup(dom));
-  doc.save("myDocument.pdf");
-};
 
 const dom = (
   <React.StrictMode>
@@ -28,7 +19,7 @@ const dom = (
     </Helmet>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App downloadPdf={downloadPdf} />} />
+        <Route path="/" element={<App/>} />
         <Route path="/cv" element={<CurriculumVitaeComponent />} />
       </Routes>
     </BrowserRouter>

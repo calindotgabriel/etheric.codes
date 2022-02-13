@@ -1,13 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './App.css';
 import { Main } from './template/Main';
 
 import React, { useEffect } from "react";
 
 type AppProps = {
-  downloadPdf: Function
+
 }
-export const App : React.FC<AppProps> = ({downloadPdf}) => {
+
+export const App : React.FC<AppProps> = ({}) => {
     return (
       <Main className="pt-32 pl-6">
       <h3 className="text-4xl">Hi! I'm Gabriel</h3>
@@ -16,10 +17,9 @@ export const App : React.FC<AppProps> = ({downloadPdf}) => {
       <Link to="/cv">
         <button className={`text-lg mt-4 rounded-md p-2 border-2`}>Go to curriculum</button>
       </Link>
-      <Link to="/cv.pdf" target="_blank" download>
+      <Link to="/CalinGabriel.pdf" target="_blank" download>
         <button className={`ml-3 text-lg mt-4 rounded-md p-2 border-2`}>PDF</button>
       </Link>
-      {/* <h1 className="font-bold text-2xl">code from the cloud</h1> */}
     </Main>
   );
 }
