@@ -23,7 +23,7 @@ const CurriculumVitaeComponent = (props: CurriculumVitaeComponentProps) => {
         </div>
       </Link>
       <div id="cv-component">
-        <div className="text-3xl lg:text-4xl tracking-widest font-light">
+        <div className="text-3xl lg:text-4xl tracking-widest font-nunito font-light">
           {cv.name}
         </div>
         <div className="grid grid-cols-2 gap-8 break-words mt-4 md:pt-6 leading-normal">
@@ -37,8 +37,13 @@ const CurriculumVitaeComponent = (props: CurriculumVitaeComponentProps) => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 mt-2 lg:mt-8">
-          <ExperienceView experience={cv.experience} />
-          <ProjectsView projects={cv.projects} />
+          <div className="col-span-2 lg:col-span-1">
+            <ExperienceView experience={cv.experience} />
+          </div>
+          <div className="col-span-2 lg:col-span-1">
+            <ProjectsView projects={cv.projects} />
+          </div>
+          
         </div>
       </div>
     </Main>

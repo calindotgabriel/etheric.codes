@@ -1,7 +1,7 @@
 export default {
   name: "Calin Gabriel Iulian",
   headline: "software developer",
-  phoneNr: "+40749407066",
+  phoneNr: "+40759407066",
   personalEmail: "calindotgabriel18@gmail.com",
   email: "contact@etheric.codes",
   website: "etheric.codes",
@@ -13,6 +13,14 @@ export default {
     },
   ],
   experience: [
+    {
+      office: "Etheric Code, CJ, Romania",
+      role: "Freelance Web Developer",
+      period: "Sep 2020 - present",
+      description: [
+        "Freelance services using TypeScript, React, Node.JS, Mongo, Docker",
+      ]
+    },
     {
       office: "Endava, CJ, Romania",
       role: "Full Stack Developer",

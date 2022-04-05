@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './App.css';
 import { Main } from './template/Main';
 
 import React, { useEffect } from "react";
