@@ -16,7 +16,7 @@ const CurriculumVitaeComponent = () => (
     <div className="text-3xl tracking-widest">
       {cv.name}
     </div>
-    <div className="grid grid-cols-2 gap-8 mt-2 break-words">
+    <div className="grid lg:grid-cols-2 gap-8 mt-2 break-words">
       <div>
         <p>{cv.headline}</p>
         <p>{cv.phoneNr}</p>
@@ -35,8 +35,8 @@ const CurriculumVitaeComponent = () => (
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-2 gap-8 mt-3">
-      <ExperienceView experience={cv.experience}/>
+    <div className="grid gap-8 mt-3">
+      {/* <ExperienceView experience={cv.experience}/> */}
       <ProjectsView projects={cv.projects}/>
     </div>
   </Main>

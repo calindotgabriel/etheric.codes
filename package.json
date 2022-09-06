@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@timohausmann/quadtree-js": "^1.2.5",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
@@ -15,6 +16,8 @@
     "@types/react-helmet": "^6.1.5",
     "@types/svg.js": "^2.3.1",
     "autoprefixer": "^10.4.2",
+    "d3": "^7.6.1",
+    "d3-delaunay": "^6.0.2",
     "postcss": "^8.4.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,12 +25,14 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "6",
     "react-scripts": "5.0.0",
+    "seedrandom": "^3.0.5",
+    "simplex-noise": "^4.0.0",
     "tailwindcss": "^3.0.16",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

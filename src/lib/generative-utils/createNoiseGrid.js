@@ -1,4 +1,4 @@
-import SimplexNoise from "simplex-noise";
+import * as SimplexNoise from "simplex-noise";
 
 const defaultOpts = {
   width: 200,
