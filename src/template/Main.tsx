@@ -6,7 +6,6 @@ type MainProps = {
   children: ReactNode
   className?: string
 }
-// className={`font-sans text-white text-sm`}
 const Main = (props: MainProps) => (
   <div>
     <BackgroundWavesView className={props.className}>
