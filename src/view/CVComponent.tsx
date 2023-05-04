@@ -13,7 +13,7 @@ const CurriculumVitaeComponent = () => (
       </div>
     </Link>
     <div className="text-3xl tracking-widest mb-10 mt-5">
-      {cv.name} {'// senior software developer'}
+      {cv.name} {' // software developer'}
     </div>
     <div className="grid md:grid-cols-3 print:grid-cols-3 gap-8 mt-2 break-words max-w-screen-lg	print:max-w-screen-xs">
       <div>
@@ -35,15 +35,15 @@ const CurriculumVitaeComponent = () => (
         </div>
       </div>
       <div className="">
-        <p>#NodeJS</p>
-        <p>#TypeScript</p>
-        <p>#React</p>
+        <p>#Spring</p>
+        <p>#Java</p>
         <p>#SQL</p>
+        <p>#Ruby on Rails</p>
       </div>
     </div>
     <div className="grid gap-8 mt-6 max-w-screen-lg	print:max-w-screen-xs">
       <ExperienceView experience={cv.experience} />
-      <p className="mt-4">See full experience at <a className="color-blue text-blue" href="https://www.linkedin.com/in/calingabriel-ts-dev/">LinkedIn</a></p>
+      <p className="mt-4">See full experience at <a className="color-blue text-blue" href={`https://www.${cv.website}`}>LinkedIn</a></p>
 
     </div>
   </Main>
