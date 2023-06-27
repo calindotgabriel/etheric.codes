@@ -16,6 +16,7 @@
     "@types/react-helmet": "^6.1.5",
     "@types/svg.js": "^2.3.1",
     "autoprefixer": "^10.4.2",
+    "axios": "^1.4.0",
     "d3": "^7.6.1",
     "d3-delaunay": "^6.0.2",
     "postcss": "^8.4.5",

@@ -1,0 +1,19 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "esbuild src/app.ts --bundle --platform=node --target=es2020 --outfile=out.js",
+		"dev": "nodemon --watch 'src/**/*.ts' --exec 'node -r esbuild-register' src/app.ts",
+		"prod": "node out.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"esbuild": "^0.18.10",
+		"esbuild-register": "^3.4.2",
+		"nodemon": "^2.0.22"
+	}
+}

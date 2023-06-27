@@ -16,7 +16,7 @@ export const ExperienceView: React.FC<ExperienceViewProps> = (props) => {
       </div>
       <ul>
         {cv.experience.map((exp, i) =>
-          <li className="mt-5 first:mt-1 mb" key={'exp' + i}>
+          <li className="mt-9 first:mt-1 mb" key={'exp' + i}>
             <p><span className="font-bold">{exp.office}</span> - <span className="italic">{exp.period}</span></p>
             <DescriptionView index={i} description={exp.description} />
           </li>)}

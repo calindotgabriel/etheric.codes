@@ -11,6 +11,7 @@ import {
 import CurriculumVitaeComponent from './view/CVComponent';
 import {Helmet} from "react-helmet";
 
+import axios from 'axios';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -29,6 +30,28 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const TOKEN = 'AQUso2pzZRZQPS_Xy8d756uwgbURGrTd699Z9Bavbim_kczhueg-DLulkx5qjBUNgqRaJ4O_G5N861MGx5OvW1u0H2sIr5E4iDKCXb5uck0urTh9GgI4VrHS3ENx1NQrnPPQSBt4VJke1_sBRtpW1AmkCVQQdjeh2tlE_XknbDl3WR-EDveRHpMa8CuSF3MATHvvvfqkUj-n6OZW74dh-sWJWuunju7K-cJ60GHW7KV1c9mCHWYFEgo5ZKuOcmOiea-4eDRyt5TeRAvfEAijmXB2u0Ewt_HXZB4VWuiKkpFHTZTg7AOQgnNbfoYb_NvoU6OEs4UBC2eNlhYmoHnUrNxMYN56PA'
+
+const fetchData = async () => {
+  try {
+    const response = await axios.get('https://api.linkedin.com/v2/me', {
+      headers: {
+        Authorization: 'Bearer ' + TOKEN,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    // Process the response data as per your requirements
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+fetchData()
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

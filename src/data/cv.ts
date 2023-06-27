@@ -1,7 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
+/**
+ * Throughout my career in software development, I have had the opportunity to work with leading organisations across various industries. These include a major telecommunications company in Germany, a prominent payment solutions provider in Scandinavia, a top energy company in Germany, a respected international scientific publishing entity, a popular U.S. cold-pressed juice and wellness brand, and a renowned U.S. furniture retailer.Throughout my career in software development, I have had the opportunity to work with leading organisations across various industries. These include a major telecommunications company in Germany, a prominent payment solutions provider in Scandinavia, a top energy company in Germany, a respected international scientific publishing entity, a popular U.S. cold-pressed juice and wellness brand, and a renowned U.S. furniture retailer.
+Skills: Back-End Web Development · Code Review · REST APIs · REST API · Microsoft Azure · TypeScript · NestJS · MongoDB
+ */
 export default {
 	name: 'Calin Gabriel Iulian', // @todo transitions loop bg change every 10 seconds ( css, lib )
 	headline: 'software developer',
+	description: `Forging a path across a spectrum of industries, I've refined a set of skills and understanding of distinct markets.
+		 My journey spans from telecommunications and energy sectors, to the vibrant world of leisure and the cutting-edge domain of scientific publishing.`,
 	phoneNr: '+40759407066',
 	email: 'calindotgabriel18@gmail.com',
 	website: 'linkedin.com/in/calingabriel-ts-dev',
@@ -41,6 +47,7 @@ export default {
 				'⚡ Created a responsive Drag and Drop UI in plain JavaScript with advanced features like Drag to Reorder and Drag to Position.',
 				'💳 The client, a principal payment solutions provider in Europe, had a hard time delivering payment details in a clear and organized way, thus losing potential new clients.',
 				'⚡ Introduced an API validator for Backend, reducing development time by at least half on validating and securing the routes,',
+
 				'🛠 Skills: React.Js, Typescript, Express.js, Koa.js, MongoDB, SQL, Docker, AWS',
 			],
 		},
